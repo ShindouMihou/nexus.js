@@ -4,6 +4,12 @@ import { Routes } from "discord.js"
 import {build} from "../command/translation";
 
 export class Synchronizer {
+
+    /**
+     * Synchronizes the commands from {@link Nexus} to Discord. This will perform bulk overwrites, which means
+     * that existing application commands, such as user and message context menus can be overwritten, it is recommended
+     * to re-add them after this completes.
+     */
     public async sync() {
         if (Nexus.client == null) {
             throw Error('No available client to process synchronization.')

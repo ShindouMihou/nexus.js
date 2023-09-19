@@ -11,6 +11,10 @@ import {
 } from "discord.js";
 import {Command} from "./core";
 
+/**
+ * Translates the {@link Command} instance into an useable {@link SlashCommandBuilder} instance.
+ * @param command the command to translate.
+ */
 export function build(command: Command): SlashCommandBuilder {
     const builder = new SlashCommandBuilder()
         .setName(command.name)

@@ -31,6 +31,10 @@ export const PingCommand: Command = {
 import {Nexus} from "@mihou/nexus.js";
 
 Nexus.manager.add(PingCommand)
+
+// You can also add one or more commands directly using the conveinence function:
+// Nexus.manager.many(PingCommand)
+
 const client = new Client({ intents: [GatewayIntentBits.Guilds] })
     .on(Events.InteractionCreate, Nexus.onInteractionCreate)
     .once(Events.ClientReady, async client => {
