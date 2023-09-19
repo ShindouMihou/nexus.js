@@ -44,7 +44,7 @@ export class Synchronizer {
 
             await Nexus.client.rest.put(
                 Routes.applicationGuildCommands(Nexus.client!!.application!!.id, server),
-                { body: commands.map((command) => build(command).toJSON()) }
+                { body: commands.map((command: Command) => build(command).toJSON()) }
             )
         }
     }

@@ -1,6 +1,6 @@
 {
   "name": "@mihou/nexus.js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "The Javascript port of the Kotlin Discord framework, Nexus.",
   "scripts": {},
   "keywords": [],
@@ -11,5 +11,13 @@
   },
   "prepublish": "tsc --project tsconfig.json",
   "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShindouMihou/nexus.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ShindouMihou/nexus.js/issues"
+  },
   "private": false
 }
