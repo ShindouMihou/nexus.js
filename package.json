@@ -9,5 +9,6 @@
   "dependencies": {
     "discord.js": "^14.13.0"
   },
+  "types": "dist/index.d.ts",
   "private": false
 }
