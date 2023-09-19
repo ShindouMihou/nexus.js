@@ -1,0 +1,12 @@
+{
+  "name": "@mihou/nexus.js",
+  "version": "1.0.0",
+  "description": "The Javascript port of the Kotlin Discord framework, Nexus.",
+  "scripts": {},
+  "keywords": [],
+  "author": "mihou",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.13.0"
+  }
+}
